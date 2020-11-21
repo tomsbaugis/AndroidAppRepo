@@ -16,13 +16,15 @@ public class MainActivity extends AppCompatActivity {
         final TextView participant1 = (TextView)findViewById(R.id.participant1);
         final TextView participant2 = (TextView)findViewById(R.id.participant2);
         final TextView participant3 = (TextView)findViewById(R.id.participant3);
+        final TextView appDev = (TextView)findViewById(R.id.appDev1);
         Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                groupName.setText("Group number: 4");
+                groupName.setText("This is the first application from Group: 4");
                 participant1.setText("First participant: Toms Bauģis");
                 participant2.setText("Second participant: Kristers Vēveris");
                 participant3.setText("Third participant: Artis Tauriņš");
+                appDev.setText("The application was developed by : Toms Bauģis");
             }
         });
     }

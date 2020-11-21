@@ -17,10 +17,9 @@
             android:text="Show information about the group"
             android:layout_width="139dp"
             android:layout_height="88dp" android:id="@+id/button"
-            app:layout_constraintTop_toBottomOf="@+id/participant3"
-            android:layout_marginTop="32dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.0"/>
+            app:layout_constraintTop_toBottomOf="@+id/appDev1" app:layout_constraintVertical_bias="0.141"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/participant1"
@@ -41,5 +40,12 @@
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="296dp"
             app:layout_constraintHorizontal_bias="0.501"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/appDev1"
+            app:layout_constraintTop_toBottomOf="@+id/participant3"
+            android:layout_marginTop="28dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.035"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
