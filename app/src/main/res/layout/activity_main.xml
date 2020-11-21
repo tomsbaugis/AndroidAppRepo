@@ -9,28 +9,45 @@
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pull changes"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.478" android:id="@+id/textView2"
-            app:layout_constraintHorizontal_bias="0.53"/>
+            app:layout_constraintVertical_bias="0.264" android:id="@+id/secondLine"
+            app:layout_constraintHorizontal_bias="0.501"/>
     <TextView
-            android:text="Hello, Artis"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView"
+            android:layout_height="wrap_content" android:id="@+id/firstLine"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/textView2" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintVertical_bias="0.922"
-            app:layout_constraintHorizontal_bias="0.511"/>
+            app:layout_constraintBottom_toTopOf="@+id/secondLine" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintVertical_bias="0.816"
+            app:layout_constraintHorizontal_bias="0.501"/>
     <TextView
-            android:text="This is another text box"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView3"
+            android:layout_height="wrap_content" android:id="@+id/thirdLine"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/secondLine" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintVertical_bias="0.052"/>
+    <Button
+            android:text="Click me to see group members"
+            android:layout_width="166dp"
+            android:layout_height="80dp" android:id="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/thirdLine"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintVertical_bias="0.096"/>
+            app:layout_constraintVertical_bias="0.384"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/fourthLine"
+            app:layout_constraintBottom_toTopOf="@+id/button" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/thirdLine"
+            app:layout_constraintVertical_bias="0.308"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/fifthLine"
+            app:layout_constraintTop_toBottomOf="@+id/fourthLine"
+            app:layout_constraintBottom_toTopOf="@+id/button" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
