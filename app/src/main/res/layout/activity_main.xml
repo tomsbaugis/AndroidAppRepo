@@ -14,7 +14,6 @@
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintVertical_bias="0.796"
             app:layout_constraintHorizontal_bias="0.501"/>
     <Button
-            android:text="Show information about the group"
             android:layout_width="139dp"
             android:layout_height="88dp" android:id="@+id/button"
             app:layout_constraintBottom_toBottomOf="parent"
