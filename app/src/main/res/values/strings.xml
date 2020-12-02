@@ -3,4 +3,10 @@
     <string name="dialog">Dialog</string>
     <string name="_2nd_activty">Go to 2nd</string>
     <string name="activity_1">Activity 1</string>
+
+    <string-array name="members">
+        <item>Kristers Veveris 1</item>
+        <item>Toms Baugis 2</item>
+        <item>Artis Taurins 3</item>
+    </string-array>
 </resources>
