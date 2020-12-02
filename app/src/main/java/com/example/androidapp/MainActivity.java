@@ -8,20 +8,31 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button button;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button = (Button) findViewById(R.id.buttonSecActivity);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button dialogButton = findViewById(R.id.buttonDialog);
+        dialogButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDialog();
+            }
+        });
+
+        Button activityButton = findViewById(R.id.buttonSecActivity);
+        activityButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openActivity2();
             }
         });
+    }
+
+    public void openDialog(){
+        AppDialogClass dialog = new AppDialogClass();
+        dialog.show(getSupportFragmentManager(), "this is a dialog");
     }
 
     public void openActivity2(){
