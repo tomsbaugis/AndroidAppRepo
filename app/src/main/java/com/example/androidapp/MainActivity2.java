@@ -8,6 +8,7 @@ import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import static com.example.androidapp.MainActivity.TEXT;
@@ -15,7 +16,7 @@ import static com.example.androidapp.MainActivity.TEXT;
 public class MainActivity2 extends AppCompatActivity {
     private Button button;
     private Button buttonReadPrefs;
-    private EditText showPref;
+    private TextView showPref;
 
     public static final String TEXT = "text";
 
@@ -25,7 +26,7 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        showPref = (EditText) findViewById(R.id.editTextTextPersonName2);
+        showPref = (TextView) findViewById(R.id.editTextTextPersonName2);
         buttonReadPrefs = (Button) findViewById(R.id.buttonReadPref);
         button = (Button) findViewById(R.id.buttonBack);
         button.setOnClickListener(new View.OnClickListener() {

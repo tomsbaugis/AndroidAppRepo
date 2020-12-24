@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private Button buttonScnd;
     private EditText editText;
     private Button buttonSave;
-    private Button buttonClear;
     private EditText showText;
     private Spinner spinner;
 

@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
-    <EditText
+    <TextView
         android:id="@+id/editTextTextPersonName2"
-        android:layout_width="325dp"
-        android:layout_height="69dp"
+        android:layout_width="321dp"
+        android:layout_height="87dp"
         android:layout_marginTop="120dp"
         android:ems="10"
         android:hint="Preferences will be displayed here..."
