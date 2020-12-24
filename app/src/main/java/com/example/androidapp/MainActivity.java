@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+import androidx.appcompat.app.AppCompatDelegate;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private Button buttonScnd;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private Button buttonSave;
     private Button buttonClear;
     private EditText showText;
+    private Spinner spinner;
 
     public static final String SHARED_PREFERENCES = "sharedPreferences";
     public static final String TEXT = "text";
@@ -64,6 +66,25 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         loadData();
         updateViews();
 
+        spinner = findViewById(R.id.spinner);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Object item = parent.getItemAtPosition(position);
+                if (item.toString().equals("Dark theme")) {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                }
+                if (item.toString().equals("Light theme")) {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 }
 
     public void saveData() {
