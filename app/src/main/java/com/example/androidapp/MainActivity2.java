@@ -40,7 +40,7 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View v) {
                 loadData();
                 updateViews();
-                if(text.length() >= 0){
+                if(text.length() == 0){
                    Toast.makeText(MainActivity2.this, "Nothing found", Toast.LENGTH_SHORT).show();
                 } else {
                     showPref.setText(text);
