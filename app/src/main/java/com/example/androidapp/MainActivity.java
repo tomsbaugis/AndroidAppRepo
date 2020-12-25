@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private Button buttonScnd;
     private EditText editText;
     private Button buttonSave;
-    private EditText showText;
-    private Spinner spinner;
 
     public static final String SHARED_PREFERENCES = "sharedPreferences";
     public static final String TEXT = "text";
@@ -35,7 +33,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         editText = (EditText) findViewById(R.id.editTextTextPersonName);
         buttonSave = (Button) findViewById(R.id.buttonSave);
-        showText = (EditText) findViewById(R.id.editTextTextPersonName2);
 
         Spinner spinner = findViewById(R.id.spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
