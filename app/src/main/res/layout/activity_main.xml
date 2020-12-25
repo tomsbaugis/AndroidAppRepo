@@ -9,7 +9,7 @@
     <EditText
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:inputType="number"
+            android:inputType="number|numberDecimal"
             android:ems="10"
             android:id="@+id/number1"
             app:layout_constraintTop_toTopOf="parent"
@@ -19,7 +19,7 @@
     <EditText
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:inputType="number"
+            android:inputType="number|numberDecimal"
             android:ems="10"
             android:id="@+id/number2"
             app:layout_constraintTop_toBottomOf="@+id/number1"
@@ -29,13 +29,13 @@
     <EditText
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:inputType="number"
             android:ems="10"
             android:id="@+id/result"
             app:layout_constraintTop_toBottomOf="@+id/number2"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.153"
-            app:layout_constraintVertical_bias="0.054"/>
+            app:layout_constraintVertical_bias="0.054" android:clickable="false" android:visibility="visible"
+            android:editable="false" android:duplicateParentState="false" android:inputType="none"/>
     <Button
             android:text="*"
             android:layout_width="50dp"
@@ -74,5 +74,29 @@
             android:layout_height="50dp" android:id="@+id/btnResult"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.845" app:layout_constraintVertical_bias="0.419"/>
+            app:layout_constraintHorizontal_bias="0.845" app:layout_constraintVertical_bias="0.405"/>
+    <Button
+            android:text="MS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btnSave"
+            app:layout_constraintTop_toBottomOf="@+id/result"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.123"
+            app:layout_constraintVertical_bias="0.103"/>
+    <Button
+            android:text="MR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btnRead"
+            app:layout_constraintTop_toBottomOf="@+id/result"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@+id/btnSave"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.169"
+            app:layout_constraintVertical_bias="0.103"/>
+    <Button
+            android:text="MC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btnClear"
+            app:layout_constraintStart_toEndOf="@+id/btnRead"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.432" app:layout_constraintTop_toBottomOf="@+id/result"
+            app:layout_constraintVertical_bias="0.103"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
