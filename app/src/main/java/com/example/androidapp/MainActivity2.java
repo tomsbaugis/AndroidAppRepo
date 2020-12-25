@@ -7,11 +7,8 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import static com.example.androidapp.MainActivity.TEXT;
 
 public class MainActivity2 extends AppCompatActivity {
     private Button button;
